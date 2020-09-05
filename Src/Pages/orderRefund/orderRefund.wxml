@@ -1,0 +1,17 @@
+<!--Pages/orderRefund/orderRefund.wxml-->
+<image src="/Assets/Icons/wd_icon_zxsc.png" class="bigImg"/>
+<view class="card">
+    <label class="title">功夫茶具套餐</label>
+    <view >
+        <label >官方参考价</label>
+        <label style="color: #FD4141;font-size:32rpx;">￥4000.30</label>
+    </view>
+</view>
+<view class="info">
+    <van-cell title="申请原因" is-link value="{{reason}}" border='{{false}}'/>
+    <textarea placeholder="买家留言" wx:if="{{false}}"></textarea>
+    <label class='tip'>申请退款后，盲订订单自动取消</label>
+</view>
+<view class="btn">
+    <van-button type="info">申请退款</van-button>
+</view>

@@ -1,0 +1,13 @@
+<!-- Pages/bindPhone/bindPhone.wxml -->
+<view class="all">
+    <view class="bigDiv">
+        <input value="{{ phone }}" bindinput="inputPhone" placeholder="请输入手机号码（必填）" />
+        <view class="message">
+            <input value="{{ code }}" bindinput="inputcode" placeholder="请输入短信验证码" />
+            <van-button bindtap="getCode" type="info">{{timetext}}</van-button>
+        </view>
+        <view class="btn">
+            <van-button type="primary" bindtap="bindmobilephone">绑定手机</van-button>
+        </view>
+    </view>
+</view>

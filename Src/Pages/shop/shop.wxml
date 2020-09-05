@@ -1,0 +1,35 @@
+<view>
+    <scroll-view scroll-y="{{true}}" class="container">
+        <view class="top-shop-box">
+            <view class="title">{{list.store_name}}</view>
+            <!-- <image src="{{list.image}}" class="shopimg" /> -->
+            <card-swipe wx:if="{{cards.length}}" generic:card="card" class="card-swipe" bind:cardSwipe="cardSwipe" cards="{{cards}}" removed-cards="{{removed_cards}}" show-cards="{{show_cards}}" slide-thershold="{{thershold}}" transition="{{transition}}" scale-ratio="{{scale_ratio}}" circling="{{circling}}" up-height="{{up_height}}" rotate-deg="{{rotate_deg}}" slide-duration="{{slide_duration}}"></card-swipe>
+            <!-- <swiper current="1" bindchange="imageChange" bindtouchstart="touchStart" bindtouchend="touchEnd" class="swiper-item-images" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{tmpList}}" wx:key="*this">
+                <swiper-item>
+                    <image src="{{item.image}}" class="shopimg" />
+                </swiper-item>
+            </block>
+        </swiper> -->
+            <view class="imageText">官方参考价格：¥{{list.ot_price}}</view>
+            <button class="btn" bindtap="buyNow">立即订购</button>
+            <view class="buttontext" data-goodsid="{{list.product_id}}" bindtap="linkto">
+                <view class="text">了解详情</view>
+                <image src="../../Assets/Icons/md_icon_fanhui.png" class="imgright" />
+            </view>
+        </view>
+        <view style="background:#9DA7B5;height:10rpx;width:100%;opacity:0.1;margin-top:23rpx;"></view>
+        <view class="shop_list">
+            <view class="shop_title" bindtap="goindex">
+                <image src="../../Assets/Icons/md_ljcj.png" class="titleimg" />
+                <image src="../../Assets/Icons/md_icon_fanhui.png" class="imgright ti" />
+            </view>
+            <view class="shop_b" wx:for="{{list.info_list}}" wx:key="index">
+                <shop-box bind:seeinfo="getListSeeinfo" shopData="{{item}}"></shop-box>
+            </view>
+            <!-- <view class="shop_b">
+            <shop-box></shop-box>
+        </view> -->
+        </view>
+    </scroll-view>
+</view>

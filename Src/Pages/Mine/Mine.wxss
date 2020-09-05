@@ -1,0 +1,106 @@
+/* Pages/Mine/Mine.wxss */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 44rpx;
+}
+.topTab {
+  display: flex;
+  align-items: center;
+}
+.txImg {
+  width: 110rpx;
+  height: 106rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.rightBtn {
+  padding: 16rpx 20rpx;
+  border: 2rpx solid #979d79;
+  font-size: 28rpx;
+  color: rgba(151, 157, 121, 1);
+  border-radius: 70rpx;
+  /* line-height:40px; */
+}
+.rightDiv {
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: rgba(32, 32, 32, 1);
+  margin-bottom: 12rpx;
+}
+.bindTel {
+  padding: 8rpx 14rpx;
+  border: 2rpx solid #979d79;
+  font-size: 24rpx;
+  color: rgba(151, 157, 121, 1);
+  border-radius: 70rpx;
+  text-align: center;
+}
+.telNum {
+  font-size: 24rpx;
+  color: #9ea7b6;
+}
+.rightIcon image {
+  width: 46rpx;
+  height: 48rpx;
+}
+.card {
+  padding: 40rpx 50rpx;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 30rpx 0px rgba(158, 167, 182, 0.12);
+  border-radius: 20rpx;
+  margin: 0 30rpx 50rpx;
+}
+.card navigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card image {
+  margin-bottom: 22rpx;
+}
+.card label {
+  font-size: 28rpx;
+  font-weight: normal;
+  color: rgba(52, 52, 52, 1);
+}
+.linkItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40rpx 0;
+  /* margin-left: 44rpx; */
+  border-bottom: 2rpx solid rgba(158, 167, 182, 0.1);
+}
+.linkItem view {
+  display: flex;
+  align-items: center;
+}
+.linkItem view image {
+  margin-right: 32rpx;
+}
+.linkItem view label {
+  font-size: 30rpx;
+  color: rgba(32, 32, 32, 1);
+}
+.rIcon {
+  width: 15rpx;
+  height: 26rpx;
+}
+.li {
+  padding: 0 44rpx;
+}
+.li button {
+  background-color: #ffffff;
+  padding: 20rpx 0;
+}
+.li button::after {
+  border: none;
+}

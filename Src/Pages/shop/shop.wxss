@@ -1,0 +1,134 @@
+.top-shop-box {
+  height: 958rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container {
+  height: 100vh;
+  padding-bottom: 20rpx;
+}
+.title {
+  width: 100%;
+  height: 132rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 800;
+  color: rgba(32, 32, 32, 1);
+  line-height: 132rpx;
+}
+.shopimg {
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+}
+.btn {
+  margin-top: 50rpx;
+  /* margin: 50rpx 0 0 0; */
+  width: 560rpx;
+  height: 86rpx;
+  background: rgba(151, 157, 121, 1);
+  border: 2rpx solid rgba(151, 157, 121, 1);
+  box-shadow: 0px 6rpx 7rpx 0px rgba(136, 146, 131, 0.46);
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  font-family: PingFang SC;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+}
+.buttontext {
+  margin-top: 50rpx;
+  width: 158rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text {
+  width: 115rpx;
+  height: 29rpx;
+  white-space: nowrap;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 800;
+  color: rgba(32, 32, 32, 1);
+  line-height: 40rpx;
+}
+.buttontext > .imgright {
+  margin-left: 24rpx;
+  margin-top: 10.5rpx;
+  width: 14rpx;
+  height: 23rpx;
+}
+
+.shop_list {
+  /* padding-top: 42rpx; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.shop_title {
+  /* height: 81rpx; */
+  padding-top: 40rpx;
+  width: 690rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.titleimg {
+  width: 175rpx;
+  height: 39rpx;
+}
+.ti {
+  margin-top: 8rpx;
+  width: 14rpx;
+  height: 23rpx;
+}
+.shop_b {
+  margin: 63rpx 0 0 0;
+  width: 92%;
+}
+.swiper-item-images {
+  width: 100%;
+  height: 562rpx;
+}
+
+.demo-text-1 {
+  background: red;
+  height: 300rpx;
+  width: 300rpx;
+}
+
+.demo-text-2 {
+  background: blue;
+  height: 300rpx;
+  width: 300rpx;
+}
+
+.demo-text-3 {
+  background: yellow;
+  height: 300rpx;
+  width: 300rpx;
+}
+.imageText {
+  color: red;
+  position: absolute;
+  font-weight: bold;
+  font-size: 32rpx;
+  top: 200rpx;
+}
+
+.card-swipe {
+  width: 100%;
+  height: 562.5rpx;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,5 @@
+Src/miniprogram_npm/*
+/Src/node_modules/*
+Src/node_modules
+Src/vscode/*
+.idea

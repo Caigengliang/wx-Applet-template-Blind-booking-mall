@@ -1,0 +1,20 @@
+<!-- Pages/articleCollect/articleCollect.wxml -->
+<view class="list" wx:if="{{list.length>0}}">
+    <block wx:for="{{list}}" wx:key="index">
+        <view class="item" bindtap="goLink" data-index="{{item.info.id}}">
+            <image src="{{item.info.image_input}}" class="img" />
+            <view>
+                <text class="name">{{item.info.title}}</text>
+                <label class="tip" wx:if="{{item.info.label_copy}}">{{item.info.label_copy}}</label>
+            </view>
+        </view>
+    </block>
+    <!-- <view class="item">
+        <image src="/Assets/Icons/wd_icon_mddd.png" class="img" />
+        <view >
+            <label class="name">功夫茶具套餐</label>
+            <label class="tip">茶具</label>
+        </view>
+    </view> -->
+</view>
+<view class="noData" wx:else>暂无数据</view>

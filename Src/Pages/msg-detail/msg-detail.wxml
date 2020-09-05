@@ -1,0 +1,30 @@
+<view class="container pddings" wx:if="{{detail}}">
+    <view class="title">
+        <view class="titletop">{{detail.title}}</view>
+        <view class="titlebottom">
+            <view class="time">{{detail.add_time}}</view>
+            <view class="read">阅读：{{detail.visit}}</view>
+        </view>
+    </view>
+    <viwe style="margin-top:60rpx;width:100%;">
+        <rich-text class="rich" nodes="<div style='padding-left:12px;padding-right:12px;'>{{detail.content}}</div>"></rich-text>
+    </viwe>
+    <view class="zanBtn" bindtap="zan">
+        <image class="zanicon" src="{{detail.is_like?'../../Assets/Icons/zx_icon_dz_s.png':'../../Assets/Icons/zx_icon_dz.png'}}" />
+        <view class="zantext">{{detail.like_count}}</view>
+    </view>
+</view>
+<view class="bottomBtns">
+    <view class="btn" bindtap="collect" data-index="{{detail.is_collect}}">
+        <image src="{{detail.is_collect?'../../Assets/Icons/zx_icon_sc_s.png':'../../Assets/Icons/zx_icon_sc.png'}}" />
+        <view class="btntext {{detail.is_collect?'btnSelect':''}}">收藏</view>
+    </view>
+    <view class="btn" bindtap="zan" data-index="{{detail.is_like}}">
+        <image src="{{detail.is_like?'../../Assets/Icons/zx_icon_dz_s.png':'../../Assets/Icons/zx_icon_dz.png'}}" />
+        <view class="btntext {{detail.is_like?'btnSelect':''}}">点赞</view>
+    </view>
+    <button class="btn btnB" open-type="share">
+        <image src="../../Assets/Icons/zx_icon_fx.png" />
+        <view class="btntext">分享</view>
+    </button>
+</view>

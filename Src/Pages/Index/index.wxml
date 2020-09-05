@@ -1,0 +1,30 @@
+<!-- index.wxml -->
+<view class="top">
+  <search-bar></search-bar>
+</view>
+<view>
+  <scroll-view scroll-y="{{true}}" class="shop-list" bindscrolltolower="loadMore">
+    <view class="banner-box">
+      <!-- 图片缩放模式 -->
+      <view class="conternt-box">
+        <swiper>
+          <swiper-item wx:for="{{binfo}}" wx:key="index">
+            <image class="banner" bindtap="toDetail" data-index="{{item.info_id}}" src="{{item.info.image_input[0]}}" />
+            <view class="title">{{item.info.title}}</view>
+            <view class="tip">{{item.info.subtitle}}</view>
+          </swiper-item>
+        </swiper>
+      </view>
+    </view>
+    <view class="titleH1">
+      <view class="conternt-box">
+        <image src="../../Assets/Icons/sy_bt_zx.png" mode='aspectFill' class="zixun"></image>
+      </view>
+    </view>
+    <view class="containers">
+      <view class="shop_b" wx:for="{{list}}" wx:key="index">
+        <shop-box shopData="{{item}}"></shop-box>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,30 @@
+/* Pages/commenProblem/commenProblem.wxss */
+page{
+    background-color: #F8F8F8;
+}
+.all{
+    padding: 40rpx 30rpx;
+}
+.list{
+    padding: 2rpx 2rpx 0;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 0px 30rpx 0px rgba(157,167,181,0.12);
+    border-radius:10rpx;
+    margin-top: 40rpx;
+}
+.title{
+    font-size:32rpx;
+    font-weight:bold;
+    margin-left: 18rpx;
+    color:rgba(32,32,32,1);
+}
+.list .van-cell__title{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.item{
+    margin-bottom: 40rpx;
+}

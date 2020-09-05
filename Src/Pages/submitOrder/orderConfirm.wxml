@@ -1,0 +1,54 @@
+<!-- * @Author: yezi
+ * @Date: 2020-08-25 16:09:41
+ * @LastEditors: yezi
+ * @LastEditTime: 2020-08-26 08:52:34
+ * @Description: -->
+<!-- Pages/orderConfirm/orderConfirm.wxml -->
+<image src="{{detailData.storeInfo.image}}" class="bigImg" />
+<!-- <rich-text nodes="{{detailData.descriptions}}"></rich-text> -->
+<view class="card">
+    <label class="title">{{detailData.storeInfo.store_name}}</label>
+    <view class="contentbox">
+        <label class="price">官方参考价：￥{{detailData.storeInfo.ot_price}}</label>
+        <label class="yuding">已预订量：{{detailData.storeInfo.sales}}件</label>
+    </view>
+</view>
+<view class="centerBox">
+    <view>请设置预定数量</view>
+    <view class="count">
+        <view class="cut" bindtap="cut">-</view>
+        <input class="number" bindblur="setum" bindinput="numberset" value="{{setNumber}}" />
+        <view class="add" bindtap="add">+</view>
+    </view>
+</view>
+<view class="info">
+    <label class="title" style="padding-bottom: 20rpx;">盲订人信息</label>
+    <input class="txtin" placeholder="请输入姓名(必填)" data-index="name" value="{{formData.name}}" bindinput="textin" />
+    <input class="txtin" placeholder="请输入手机号码(必填)" data-index="phone" value="{{formData.phone}}" bindinput="textin" />
+    <view class="chooseDiv" bindtap="showProp">
+        <input class="txtin" placeholder="选择证件类型" disabled value="{{formData.type}}" />
+        <image src="../../Assets/Icons/icon_fanhui_hui.png" class="rightIcon" />
+    </view>
+    <input class="txtin" placeholder="请输入证件号(必填)" data-index="idNumber" value="{{formData.idNumber}}" bindinput="textin" />
+    <textarea class="txtin" placeholder="买家留言" style="width: auto;height: 172rpx;" data-index="remark" bindinput="textin" value="{{formData.remark}}"></textarea>
+</view>
+<view class="card">
+    <label class="title">支付方式</label>
+    <view class="payType">
+        <view class="radioDiv">
+            <image src="/Assets/Icons/ddxq_icon_weixin.png" />
+            <label>微信支付</label>
+        </view>
+        <radio checked="true" color='#FF5755' />
+    </view>
+</view>
+<cover-view class="btn">
+    <cover-view>
+        定金：
+        <cover-view style="color:#FD4141">￥{{total_price}}</cover-view>
+    </cover-view>
+    <cover-view class="button" bindtap="submit">提交订单</cover-view>
+</cover-view>
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 45%">
+    <van-picker show-toolbar columns="{{ certification_type}}" bind:cancel="onClose" bind:confirm="submit" />
+</van-popup>

@@ -1,0 +1,18 @@
+<!-- Pages/goodsCollect/goodsCollect.wxml -->
+<view class="list" wx:if="{{list.length>0}}">
+    <view class="item" wx:for="{{list}}" wx:key="index" bindtap="goDetail" data-index="{{item.pid}}">
+        <image src="{{item.image}}" class="img" />
+        <view>
+            <label class="name">{{item.store_name}}</label>
+            <label class="price">官方参考价：￥{{item.ot_price}}</label>
+        </view>
+    </view>
+    <!-- <view class="item">
+        <image src="/Assets/Icons/wd_icon_mddd.png" class="img" />
+        <view >
+            <label class="name">功夫茶具套餐</label>
+            <label class="price">官方参考价：￥132.99</label>
+        </view>
+    </view> -->
+</view>
+<view class="noData" wx:else>暂无数据</view>

@@ -1,0 +1,10 @@
+<view style="width:100%;padding-bottom:150rpx;">
+    <rich-text class="rich" wx:if="{{richData}}" nodes="<div style='padding-left:12px;padding-right:12px;'>{{richData}}</div>"></rich-text>
+</view>
+<view class="bottom">
+    <view class="stat" data-id="{{detail.id}}" bindtap="clickZan">
+        <image src="{{zanFlage?zan[1]:zan[0]}}" class="stat_img" />
+        <view class="stat_text">关注</view>
+    </view>
+    <button class="buttn_shop_det" bindtap="buyNow">立即订购</button>
+</view>

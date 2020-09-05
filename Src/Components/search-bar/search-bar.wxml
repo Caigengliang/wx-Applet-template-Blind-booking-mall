@@ -1,0 +1,6 @@
+<view class='searchView'>
+  <view class='search-sub'>
+    <image class='searchBtn' src="../../Assets/Icons/sy_icon_ss.png" bindtap="searchInput" />
+    <input class='searchInput' focus='{{false}}' bindtap="searchInput" placeholder='{{variable.placeholder}}' value="{{variable.inputValue}}" />
+  </view>
+</view>

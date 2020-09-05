@@ -1,0 +1,60 @@
+<!-- * @Author: yezi
+ * @Date: 2020-08-25 08:45:27
+ * @LastEditors: yezi
+ * @LastEditTime: 2020-08-25 09:57:31
+ * @Description: -->
+<!-- Pages/Mine/Mine.wxml -->
+<view class="top">
+    <view class="topTab">
+        <image src="{{userInfo.userInfo.avatar?userInfo.userInfo.avatar:'../../Assets/Icons/wo_icon_mrtx.png'}}" class="txImg" />
+        <view wx:if="{{!isLogin}}" class="rightBtn" bindtap="wxLogin">
+            <label>授权登录</label>
+        </view>
+        <view wx:else class="rightDiv">
+            <label class="name">{{userInfo.userInfo.nickname}}</label>
+            <label class="bindTel" wx:if="{{!isBindphone}}" bind:tap="bindPhone">绑定手机</label>
+            <label class="telNum" wx:else>{{userInfo.userInfo.phone}}</label>
+        </view>
+    </view>
+    <view class="rightIcon" bindtap="loginout" wx:if="{{isLogin}}">
+        <image src='/Assets/Icons/wd_icon_tc.png'></image>
+    </view>
+</view>
+<view class="card">
+    <navigator open-type="navigate" url="/Pages/articleCollect/articleCollect">
+        <image src="/Assets/Icons/wd_icon_zxsc.png" style="width:55rpx;height:57rpx;" />
+        <label>资讯收藏</label>
+    </navigator>
+    <navigator open-type="navigate" url="/Pages/goodsCollect/goodsCollect">
+        <image src="/Assets/Icons/wd_icon_spgz.png" style="width:63rpx;height:60rpx;" />
+        <label>商品关注</label>
+    </navigator>
+    <navigator open-type="navigate" url="/Pages/orderList/orderList">
+        <image src="/Assets/Icons/wd_icon_mddd.png" style="width:52rpx;height:60rpx;" />
+        <label>盲订订单</label>
+    </navigator>
+</view>
+<view class="li">
+    <navigator class="linkItem" open-type="navigate" url="/Pages/commenProblem/commenProblem">
+        <view>
+            <image src="/Assets/Icons/wd_icon_cjwt.png" style="width:45rpx;height:42rpx;" />
+            <label>常见问题</label>
+        </view>
+        <image src="/Assets/Icons/icon_fanhui_hui.png" class="rIcon" />
+    </navigator>
+    <!-- <button class="linkItem" open-type="contact"> -->
+    <button class="linkItem" bindtap="call">
+        <view>
+            <image src="/Assets/Icons/wd_icon_lxkf.png" style="width:48rpx;height:44rpx;" />
+            <label>联系客服</label>
+        </view>
+        <image src="/Assets/Icons/icon_fanhui_hui.png" class="rIcon" />
+    </button>
+    <navigator class="linkItem" open-type="navigate" url="/Pages/aboutUs/aboutUs">
+        <view>
+            <image src="/Assets/Icons/wd_icon_gywm.png" style="width:45rpx;height:45rpx;" />
+            <label>关于我们</label>
+        </view>
+        <image src="/Assets/Icons/icon_fanhui_hui.png" class="rIcon" />
+    </navigator>
+</view>

@@ -1,0 +1,53 @@
+<!-- Pages/orderDetail/orderDetail.wxml -->
+<image src="{{list.cartInfo[0].productInfo.image}}" class="bigImg" />
+<view class="card info">
+    <label class="title">{{list.cartInfo[0].productInfo.store_name}}</label>
+    <view>
+        <label>官方参考价</label>
+        <label style="color: #FD4141;font-size:32rpx;">
+            ￥{{list.cartInfo[0].productInfo.ot_price}}
+        </label>
+    </view>
+    <view>
+        <label>预定商品数量</label>
+        <label>{{list.total_num}}</label>
+    </view>
+    <view>
+        <label>预定定金总额</label>
+        <label>￥{{list.total_price}}</label>
+    </view>
+</view>
+<view class="card">
+    <label class="title">订单信息</label>
+    <view>
+        <label>订单编号</label>
+        <label>{{list.order_id}}</label>
+    </view>
+    <view>
+        <label>订单完成时间</label>
+        <label>{{list._pay_time}}</label>
+    </view>
+    <view>
+        <label>订单状态</label>
+        <!-- <label>{{list._status._title + "   " +list._status._msg}}</label> -->
+        <label>{{list._status._title }}</label>
+    </view>
+</view>
+<view class="card">
+    <label class="title">盲订人信息</label>
+    <view>
+        <label>姓名</label>
+        <label>{{list.real_name}}</label>
+    </view>
+    <view>
+        <label>手机号</label>
+        <label>{{list.real_name}}</label>
+    </view>
+    <view>
+        <label>证件号</label>
+        <label>{{list.certification_info}}</label>
+    </view>
+</view>
+<view class="btn">
+    <button bind:tap="checkRight">查看权益</button>
+</view>

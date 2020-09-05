@@ -1,0 +1,24 @@
+{
+  "name": "shop_npm",
+  "version": "1.0.0",
+  "description": "wxApp.Boilerplate（WXBP）——  微信小程序原生开发通用框架",
+  "main": "main.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "微信小程序",
+    "脚手架",
+    "框架"
+  ],
+  "author": "caigengliang",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "@vant/weapp": "^1.4.4",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {}
+}

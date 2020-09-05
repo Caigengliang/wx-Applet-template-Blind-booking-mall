@@ -1,0 +1,77 @@
+/**index.wxss**/
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 41rpx 0 0 0;
+  padding-bottom: 40rpx;
+}
+.banner-box {
+  margin: 19rpx 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conternt-box {
+  width: 690rpx;
+}
+.banner {
+  height: 355rpx;
+  /* background-color: red; */
+  width: 100%;
+}
+.title {
+  margin: 20rpx 0 0 0;
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(32, 32, 32, 1);
+  line-height: 40rpx;
+}
+.tip {
+  margin: 19rpx 0 0 0;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(32, 32, 32, 1);
+  line-height: 40rpx;
+}
+
+.zixun {
+  width: 117rpx;
+  height: 38rpx;
+}
+.titleH1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50rpx 0 0 0;
+}
+.shop_b {
+  margin: 63rpx 0 0 0;
+  width: 92%;
+}
+.containers :first-child {
+  margin: 0;
+}
+.top {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.shop-list {
+  padding-top: 70rpx;
+  height: calc(100vh - 60rpx);
+}
+page {
+  background: #f9f9f9;
+}
+swiper {
+  height: 500rpx;
+}

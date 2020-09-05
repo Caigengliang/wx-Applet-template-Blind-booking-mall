@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "navigationBarTitleText": "申请退款"
+}

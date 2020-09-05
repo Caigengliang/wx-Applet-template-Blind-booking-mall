@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search-bar": "../../Components/search-bar/search-bar",
+    "shop-box": "../../Components/shop-box/shop-box",
+    "card-swipe": "../../Components/cardSwipe/cardSwipe",
+    "card": "../../Components/card/card"
+  }
+}

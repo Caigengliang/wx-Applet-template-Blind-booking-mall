@@ -1,0 +1,60 @@
+/*
+ * @Author: caigengliang
+ * @Date: 2020-07-13 17:02:33
+<<<<<<< HEAD
+ * @LastEditTime: 2020-08-27 15:47:42
+ * @LastEditors: Please set LastEditors
+=======
+ * @LastEditTime: 2020-08-27 15:51:01
+ * @LastEditors: yezi
+>>>>>>> 7caca9277e9d72dc1463e071e7a030c58819af1d
+ * @Description: In User Settings Edit
+ * @FilePath: /mdshop_mini/Src/Apis/ApiUrls.js
+ */
+const domains = require("./Domain.js");
+// const httpRequest = require("/Utils/HttpHelper.js");
+import httpRequest from "../Utils/HttpHelper.js";
+
+console.log("小程序当前域名：", domains);
+
+const urls = {
+  userLogin: { url: "wechat/mp_auth", method: "POST" }, // 用户登录
+  verify: { url: "register/verify", method: "POST" }, // 用户登录
+  verify_code: { url: "verify_code", method: "get" }, // 用户登录
+<<<<<<< HEAD
+  bannerList: { url: "/info/list/:0", method: "get" }, // 首页默认数据
+=======
+  articleList: { url: "info/collect/list", method: "POST" }, // 资讯收藏列表
+  goodsList: { url: "collect/user", method: "get" }, // 商品关注列表
+>>>>>>> 7caca9277e9d72dc1463e071e7a030c58819af1d
+};
+
+const request = {};
+
+const getUrls = () => {
+  for (const key in urls) {
+    urls[key].url = domains.apiDomain + "/api/" + urls[key].url;
+  }
+  return urls;
+};
+
+const getApi = () => {
+  for (const key in urls) {
+    let req = httpRequest;
+    if (urls[key].method === "POST") {
+      req = httpRequest.post;
+    }
+    request[key] = (params) => {
+      return req(urls[key].url, params);
+    };
+  }
+  return request;
+};
+
+const modulea = {
+  urls: getUrls(),
+  domains,
+};
+const moduleb = getApi();
+
+module.exports = Object.assign(modulea, moduleb);

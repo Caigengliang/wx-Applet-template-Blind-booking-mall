@@ -1,0 +1,4 @@
+<!-- Pages/H5/H5.wxml -->
+<view style="width:100%;">
+    <rich-text class="rich" nodes="<div style='padding-left:12px;padding-right:12px;text-align:left;'>{{content}}</div>"></rich-text>
+</view>

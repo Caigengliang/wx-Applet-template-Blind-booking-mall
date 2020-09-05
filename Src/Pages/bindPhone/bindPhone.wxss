@@ -1,0 +1,50 @@
+/* Pages/bindPhone/bindPhone.wxss */
+page{
+    background-color: #F8F8F8;
+}
+.all{
+    padding: 30rpx;
+}
+.bigDiv{
+    background-color: #fff;
+    padding: 60rpx;
+    box-shadow:0px 0px 30rpx 0px rgba(157,167,181,0.12);
+    border-radius:20rpx;
+}
+.bigDiv .van-cell{
+    padding: 0;
+}
+.bigDiv input{
+    background:rgba(157,167,181,0.1);
+    border-radius:10rpx;
+    padding: 20rpx;
+    font-size:28rpx;
+}
+.message{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30rpx;
+    margin-bottom: 60rpx;
+}
+.message .van-button--info{
+    background:rgba(85,169,255,1);
+    border-color: rgba(85,169,255,1);
+    border-radius:10rpx;
+    font-size:28rpx;
+    color:rgba(255,255,255,1);
+    height: 84rpx;
+}
+.btn{
+    width: 100%;
+}
+.btn .van-button--primary{
+    width: 100%;
+    background:rgba(151,157,121,1);
+    border:2rpx solid rgba(151,157,121,1);
+    box-shadow:0px 6rpx 7rpx 0px rgba(136,146,131,0.24);
+    border-radius:10rpx;
+    font-size:34rpx;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+}

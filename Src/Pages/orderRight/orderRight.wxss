@@ -1,0 +1,55 @@
+/* Pages/orderRight/orderRight.wxss */
+.top{
+    padding: 20rpx 30rpx;
+    height: 400rpx;
+    position: relative;
+    z-index: -1;
+}
+.bigImg{
+    width: 100%;
+    height: 100%;
+}
+.rightDiv{
+    background-color: #fff;
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    margin-top: -80rpx;
+    box-shadow:0px 0px 30rpx 0px rgba(157,167,181,0.12);
+    border-radius:10rpx;
+    padding: 40rpx;
+}
+.rightTop{
+    display: flex;
+    justify-content: space-between;
+}
+.rightTop image{
+    width: 194rpx;
+    height: 44rpx;
+}
+.dot{
+    width:12rpx;
+    height:12rpx;
+    background:rgba(255,205,85,1);
+}
+.conFir{
+    padding: 60rpx 10rpx 0;
+}
+.conFir view{
+    display: flex;
+    align-items: center;
+}
+.conFir view image{
+    width: 28rpx;
+    height: 36rpx;
+    margin-right: 20rpx;
+}
+.conFir view label{
+    font-size:32rpx;
+    font-weight:800;
+    color:rgba(32,32,32,1);
+}
+.content{
+    font-size:26rpx;
+    color:rgba(157,167,181,1);
+    padding: 32rpx 40rpx 0;
+}

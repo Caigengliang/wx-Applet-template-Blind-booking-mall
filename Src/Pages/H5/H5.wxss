@@ -1,0 +1,8 @@
+/* Pages/H5/H5.wxss */
+.rich {
+  word-break: break-all;
+}
+.rich .rich-img {
+  max-width: 100%;
+  height: auto;
+}

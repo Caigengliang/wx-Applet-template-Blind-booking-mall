@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "search-bar": "../../Components/search-bar/search-bar",
+    "shop-box": "../../Components/shop-box/shop-box"
+  }
+}

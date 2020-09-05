@@ -1,0 +1,16 @@
+<!-- Pages/commenProblem/commenProblem.wxml -->
+<view class="all">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+        <label class="title">{{item.c_title}}</label>
+        <view class="list">
+            <van-cell-group>
+                <block wx:for="{{item.articles}}" wx:for-item="itemn" wx:for-index="indexn" wx:key="indexn">
+                    <van-cell title="{{itemn.a_title}}" is-link link-type="navigateTo" data-index="{{itemn.id}}" border="{{indexn === item.articles.length-1?false:true }}" bindtap="gotoLink" />
+                </block>
+            </van-cell-group>
+            <!-- <van-cell title="问题标题问题标题问题标题问题标题问题标题问题标题" is-link link-type="navigateTo" url='/Pages/H5/H5?type=question' />
+            <van-cell title="问题标题问题标题问题标题问题标题问题标题问题标题" is-link  />
+            <van-cell title="问题标题问题标题问题标题问题标题问题标题问题标题" is-link  /> -->
+        </view>
+    </view>
+</view>

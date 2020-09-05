@@ -1,0 +1,43 @@
+<!-- Pages/orderList/orderList.wxml -->
+<view class="list" wx:if="{{list.length>0}}">
+    <view class="Item" wx:for="{{list}}" wx:key="">
+        <view class="itemTop">
+            <label>订单编号：{{item.order_id}}</label>
+            <label wx:if="{{item.paid==0}}">待支付</label>
+            <label wx:if="{{item.paid==1}}">已支付</label>
+            <label wx:if="{{item.refund_status==1}}">退款中</label>
+            <label wx:if="{{item.refund_status==2}}">已退款</label>
+            <label wx:if="{{item.status==3}}" style="color:#72D684">已完成</label>
+        </view>
+        <view class="itemCenter">
+            <image src="{{item.cartInfo[0].productInfo.image}}" />
+            <view>
+                <label class="name">{{item.cartInfo[0].productInfo.store_name}}</label>
+                <label class="price">定金：￥{{item.cartInfo[0].productInfo.price}}</label>
+            </view>
+        </view>
+        <view class="itemBottom">
+            <!-- <label >取消退款</label> -->
+            <label bind:tap="toRefund">申请退款</label>
+            <label data-orderid='{{item.order_id}}' bind:tap="toDetail">查看详情</label>
+        </view>
+    </view>
+    <!-- <view class="Item">
+        <view class="itemTop">
+            <label >订单编号：1235646789</label>
+            <label >退款中</label>
+        </view>
+        <view class="itemCenter">
+            <image src="/Assets/Icons/sy_bq.png" />
+            <view>
+                <label class="name">功夫茶具套餐</label>
+                <label class="price">定金：￥30.00</label>
+            </view>
+        </view>
+        <view class="itemBottom">
+            <label >取消退款</label>
+            <label >查看详情</label>
+        </view>
+    </view> -->
+</view>
+<view class="noData" wx:else>暂无数据</view>

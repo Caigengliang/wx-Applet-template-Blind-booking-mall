@@ -1,0 +1,4 @@
+<!--Pages/aboutUs/aboutUs.wxml-->
+<van-cell title="联系我们" is-link value="{{phone}}" bind:tap="call"/>
+<van-cell title="服务协议" is-link link-type="navigateTo" url='/Pages/H5/H5?type=server' />
+<van-cell title="隐私协议" is-link link-type="navigateTo" url='/Pages/H5/H5?type=privacy' />

@@ -1,0 +1,32 @@
+<!--Pages/orderRight/orderRight.wxml-->
+<view class="top">
+    <image src="/Assets/Icons/wd_icon_zxsc.png" class="bigImg"/>
+</view>
+<view class="rightDiv">
+    <view class="rightTop">
+        <view class="dot"></view>
+        <image src="/Assets/Icons/ddqy_icon_zi.png" />
+        <view class="dot"></view>
+    </view>
+    <view class="conFir" wx:for="{{list}}" wx:key="index">
+        <view >
+            <image src="/Assets/Icons/ddqy_icon_bq.png" />
+            <label >{{item.right_title}}</label>
+        </view>
+        <view class="content">{{item.right_info}}</view>
+    </view>
+    <!-- <view class="conFir">
+        <view >
+            <image src="/Assets/Icons/ddqy_icon_bq.png" />
+            <label >权益二</label>
+        </view>
+        <view class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+    </view>
+    <view class="conFir">
+        <view >
+            <image src="/Assets/Icons/ddqy_icon_bq.png" />
+            <label >权益三</label>
+        </view>
+        <view class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</view>
+    </view> -->
+</view>

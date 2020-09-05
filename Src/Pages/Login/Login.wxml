@@ -1,0 +1,17 @@
+<!-- Pages/Login/Login.wxml -->
+<view class="all">
+    <view class="top">
+        <view class="topDiv">
+            <image src="/Assets/Icons/wd_icon_mddd.png" />
+            <label>盲订商城</label>
+        </view>
+        <view class="center">
+            <label>该程序将获取以下授权：</label>
+            <label>获得您的公开信息（昵称、头像等）</label>
+        </view>
+        <view class="btn">
+            <van-button plain type="primary" bindtap="cancel">拒绝</van-button>
+            <van-button open-type="getUserInfo" bindtap="wx_login" type="info">同意</van-button>
+        </view>
+    </view>
+</view>

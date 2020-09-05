@@ -1,0 +1,14 @@
+<view class="item" bindtap="todetail">
+  <view class="item-title">
+    <view class="label" wx:if="{{shopData.label_copy}}">{{shopData.label_copy}}</view>
+    <text>{{shopData.title}}</text>
+  </view>
+  <image class="item-image" src="{{shopData.image_input[0]}}" />
+  <view class="item-tip">
+    <view class="time">{{shopData.add_time}}</view>
+    <view class="seen">
+      <image src="../../Assets/Icons/sy_icon_lll.png" class="see" />
+      <view class="number">{{shopData.visit}}</view>
+    </view>
+  </view>
+</view>

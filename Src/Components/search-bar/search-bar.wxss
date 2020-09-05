@@ -1,0 +1,65 @@
+.searchView {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 66rpx;
+  background: #ffffff;
+  padding-bottom: 14rpx;
+}
+
+.search-sub {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 690rpx;
+  height: 66rpx;
+  background: #f4f4f4;
+  border-radius: 64rpx;
+}
+
+.searchInput {
+  background-color: #f4f4f4;
+  /* padding-left: 8rpx; */
+  height: 66rpx;
+  border-radius: 64rpx;
+  line-height: 66rpx;
+  width: 87%;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: rgba(171, 179, 192, 0.1);
+  font-family: PingFang SC;
+  padding-right: 32rpx;
+}
+
+.searchBtn {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.wxSearchInner {
+  padding-left: 10rpx;
+}
+
+.clearkey-view {
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 15rpx;
+  float: right;
+  margin-bottom: auto;
+}
+.show-clear {
+  display: block;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.hide-clear {
+  display: none;
+}

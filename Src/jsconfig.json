@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@vant/weapp/*": ["path/to/node_modules/@vant/weapp/dist/*"]
+    }
+  }
+}

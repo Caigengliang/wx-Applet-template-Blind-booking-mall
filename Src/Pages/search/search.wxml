@@ -1,0 +1,32 @@
+<view class="top">
+    <view class='searchView'>
+        <view class='search-sub'>
+            <image class='searchBtn' src="../../Assets/Icons/sy_icon_ss.png" bindtap="serachin" />
+            <input bindconfirm="serachin" class='searchInput' confirm-type="search" placeholder-class="phClass" focus='{{false}}' bindinput="searchInput" placeholder='{{variable.placeholder}}' value="{{variable.inputValue}}" />
+        </view>
+        <view class="show-clear" bindtap="serachin">搜索</view>
+    </view>
+    <view wx:if="{{shopShow}}" style="background:#9DA7B5;height:10rpx;width:100%;opacity:0.1;margin-top:23rpx;"></view>
+</view>
+<view class="containers">
+    <view wx:if="{{!shopShow}}" class="history">
+        <view class="title">历史记录</view>
+        <image src="../../Assets/Icons/ss_icon_shanchu.png" class="delete" bindtap="delHistory" />
+    </view>
+    <view wx:if="{{!shopShow}}" class="history-content">
+        <view class="flex-box">
+            <block wx:for="{{history}}" key="index">
+                <view class="history-item" data-index="{{item}}" bindtap="historySearch">
+                    <view>{{item}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+    <view>
+        <scroll-view scroll-y="{{true}}" wx:if="{{shopShow}}" class="shop-list">
+            <view class="shop_b" wx:for="{{shopList}}">
+                <shop-box bind:seeinfo="getListSeeinfo" shopData="{{item}}"></shop-box>
+            </view>
+        </scroll-view>
+    </view>
+</view>

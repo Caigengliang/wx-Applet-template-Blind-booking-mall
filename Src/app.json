@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "Pages/Index/index",
+    "Pages/shop/shop",
+    "Pages/Login/Login",
+    "Pages/shop-detail/shop-detail",
+    "Pages/Mine/Mine",
+    "Components/search-bar/search-bar",
+    "Pages/search/search",
+    "Pages/orderList/orderList",
+    "Pages/orderDetail/orderDetail",
+    "Pages/orderConfirm/orderConfirm",
+    "Pages/submitOrder/orderConfirm",
+    "Pages/orderRefund/orderRefund",
+    "Pages/orderRight/orderRight",
+    "Pages/articleCollect/articleCollect",
+    "Pages/goodsCollect/goodsCollect",
+    "Pages/H5/H5",
+    "Pages/aboutUs/aboutUs",
+    "Pages/commenProblem/commenProblem",
+    "Pages/bindPhone/bindPhone",
+    "Pages/msg-detail/msg-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "盲订商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#9EA7B6",
+    "selectedColor": "#a7ab8d",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "Pages/Index/index",
+        "iconPath": "/Assets/Icons/sy_tab_ts.png",
+        "selectedIconPath": "/Assets/Icons/sy_tab_ts_s.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "Pages/shop/shop",
+        "iconPath": "/Assets/Icons/sy_tab_md.png",
+        "selectedIconPath": "/Assets/Icons/sy_tab_md_s.png",
+        "text": "盲订"
+      },
+      {
+        "pagePath": "Pages/Mine/Mine",
+        "iconPath": "/Assets/Icons/sy_tab_wd.png",
+        "selectedIconPath": "/Assets/Icons/sy_tab_wd_s.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 60000,
+    "downloadFile": 90000,
+    "uploadFile": 90000,
+    "connectSocket": 60000
+  },
+  "subpackages": [
+    {
+      "root": "SubPackages/ModuleA",
+      "pages": ["Index/Index"],
+      "independent": true
+    },
+    {
+      "root": "SubPackages/PackageA",
+      "pages": ["Index/Index"]
+    }
+  ],
+  "debug": true
+}
