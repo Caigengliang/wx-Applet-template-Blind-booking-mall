@@ -9,7 +9,7 @@
 // 生产环境
 const proDomains = {
   // api域名
-  a: "https://mdshop.tutew.com",
+  a: "",
   // 静态文件域名
   s: "http://111.198.29.215:8081/",
   // 文件上传域名
