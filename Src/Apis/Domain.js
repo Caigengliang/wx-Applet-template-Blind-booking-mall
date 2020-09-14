@@ -19,7 +19,7 @@ const proDomains = {
 // 测试环境
 const testDomains = {
   // api域名
-  a: "https://mdshop.tutew.com",
+  a: "",
   // 静态文件域名
   s: "http://111.198.29.215:8081/",
   // 文件上传域名
@@ -29,7 +29,7 @@ const testDomains = {
 // 开发环境
 const devDomains = {
   // api域名
-  a: "https://mdshop.tutew.com",
+  a: "",
   // 静态文件域名
   s: "http://111.198.29.215:8081/",
   // 文件上传域名
